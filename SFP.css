@@ -16,25 +16,13 @@
 
 #date-label {}
 
-
-/*should see validation error if email is entered incorrectly*/
-
 #email {}
 
 #email-label {}
 
-
-/*Should see validation error if non-numbers are entered and if numbers are entered outside the range of the number input*/
-
-
-/*Defined by min and max attributes*/
-
 #number {}
 
 #number-label {}
-
-
-/*Inside form element add drop down option*/
 
 #dropdown {}
 
@@ -43,8 +31,5 @@
 .input-checkbox {}
 
 #textarea {}
-
-
-/*----Must include textarea at the end for additional comments----*/
 
 #submit {}
