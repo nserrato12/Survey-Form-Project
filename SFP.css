@@ -1,42 +1,25 @@
 :root {}
 
-
-/*title in H1 sized text*/
-
 #title {}
 
-
-/*short explanation in P sized text*/
-
 #description {}
-
-
-/*form tag must have this is*/
 
 #survey-form {}
 
 .form-element {}
 
-
-/*Inside form element---name field*/
-
 #name {}
-
-
-/*Add for attribute and placeholder text*/
 
 #name-label {}
 
+#date {}
 
-/*Inside form element---email field*/
+#date-label {}
 
 
 /*should see validation error if email is entered incorrectly*/
 
 #email {}
-
-
-/*Add for attribute and placeholder text*/
 
 #email-label {}
 
@@ -48,9 +31,6 @@
 
 #number {}
 
-
-/*Add for attribute and placeholder text*/
-
 #number-label {}
 
 
@@ -58,23 +38,13 @@
 
 #dropdown {}
 
+.input-radio {}
 
-/*-----------------------------------*/
+.input-checkbox {}
 
-
-/*----Inside form element, can select field from one or more groups of radio buttons----*/
-
-
-/*Must be grouped with name attribute*/
-
-
-/*----Inside form element, can select several fields from a series of checkboxes----*/
-
-
-/*Must have a value attribute*/
+#textarea {}
 
 
 /*----Must include textarea at the end for additional comments----*/
 
-
-/*----Must include submit button to submit all inputs*/
+#submit {}

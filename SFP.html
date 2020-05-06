@@ -4,30 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey-Form-Project</title>
     <link rel="stylesheet" type="text/css" href="SFP.css">
 </head>
 
 <body>
     <main>
         <section>
-            <h1></h1>
-            <p></p>
+            <h1 id="title">Guest Satisfaction Survey Form</h1>
+            <p id="description">Thank you for your time and honest feedback. You will be emailed a coupon offer once the form is completed as a thank you.</p>
         </section>
         <section>
-            <form>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
-                <div class="form-element"></div>
+            <form id="survey-form">
+                <!--name-->
+                <div class="form-element">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name here" required>
+                </div>
+                <!--date-visted-->
+                <div class="form-element">
+                    <label id="date-label" for="date">Date Visited</label>
+                    <input type="date" id="date" required>
+                </div>
+                <!--email-->
+                <div class="form-element">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email here" required>
+                </div>
+                <!--Order #-->
+                <div class="form-element">
+                    <label id="number-label" for="number">Order Number</label>
+                    <input type="number" id="number" placeholder="Enter order # here (located at top of receipt)" min="1000000" max="9999999" required>
+                </div>
+                <!--drop down-->
+                <div class="form-element">
+                    <p>What is your favorite menu item?</p>
+                    <select id="dropdown" required>
+                        <option disabled selected>select an option</option>
+                        <option value="cheeseburger">Cheeseburger</option>
+                        <optio value="chicken-sandwich">Chicken Sandwich</option>
+                        <option value="fries">Fries</option>
+                        <option value="side-salad">Side Salad</option>
+                        <option value="milkshake">Milkshake</option>
+                    </select>
+                </div>
+                <!--radio-->
+                <div class="form-element">
+                    <p>How satisfied were you with the service you received?</p>
+                    <label><input type="radio" class="input-radio" name="satisfaction-rating" value="excellent" checked>Excellent</label>
+                    <label><input type="radio" class="input-radio" name="satisfaction-rating" value="good">Good</label>
+                    <label><input type="radio" class="input-radio" name="satisfaction-rating" value="fair">Fair</label>
+                    <label><input type="radio" class="input-radio" name="satisfaction-rating" value="poor">Poor</label>
+                    <label><input type="radio" class="input-radio" name="satisfaction-rating" value="terrible">Terrible</label>
+                </div>
+                <!--checkbox-->
+                <div class="form-element">
+                    <p>What is the most important part of any restaurant experience?<span>(select your top three choices)</span></p>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="unique-experience">Unique Experience</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="price-to-quantity-ratio">Price-to-Quantity Ratio</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="food-quality">Food - Quality</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="dining-room-cleanliness">Dining Room Cleanliness</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="restroom-cleanliness">Restroom Cleanliness</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="speed-and-accuracy">Speed and Accuracy of your Order</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="friendly-service">Friendly Service</label>
+                    <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="restaurant-environment">Restaurant Environment</label>
+                </div>
+                <!--textarea-->
+                <div class="form-element">
+                    <p>Any additional comments or suggestions?</p>
+                    <textarea id="textarea" name="additional-comments" placeholder="Enter comments here..."></textarea>
+                </div>
+                <!--submit-->
+                <div class="form-element">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
             </form>
         </section>
     </main>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
