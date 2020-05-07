@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <title>Survey-Form-Project</title>
     <link rel="stylesheet" type="text/css" href="SFP.css">
 </head>
@@ -13,6 +15,7 @@
         <section>
             <h1 id="title">Guest Satisfaction Survey Form</h1>
             <p id="description">Thank you for your time and honest feedback. You will be emailed a coupon offer once the form is completed as a thank you.</p>
+            <br>
         </section>
         <section>
             <form id="survey-form">
@@ -21,24 +24,28 @@
                     <label id="name-label" for="name">Name</label>
                     <input type="text" id="name" placeholder="Enter name here" required>
                 </div>
+                <br>
                 <!--date-visted-->
                 <div class="form-element">
                     <label id="date-label" for="date">Date Visited</label>
                     <input type="date" id="date" required>
                 </div>
+                <br>
                 <!--email-->
                 <div class="form-element">
                     <label id="email-label" for="email">Email</label>
                     <input type="email" id="email" placeholder="Enter email here" required>
                 </div>
+                <br>
                 <!--Order #-->
                 <div class="form-element">
                     <label id="number-label" for="number">Order Number</label>
                     <input type="number" id="number" placeholder="Enter order # here (located at top of receipt)" min="1000000" max="9999999" required>
                 </div>
+                <br>
                 <!--drop down-->
                 <div class="form-element">
-                    <p>What is your favorite menu item?</p>
+                    <p class="drop-text">What is your favorite menu item?</p>
                     <select id="dropdown" required>
                         <option disabled selected>select an option</option>
                         <option value="cheeseburger">Cheeseburger</option>
@@ -48,18 +55,20 @@
                         <option value="milkshake">Milkshake</option>
                     </select>
                 </div>
+                <br>
                 <!--radio-->
                 <div class="form-element">
-                    <p>How satisfied were you with the service you received?</p>
+                    <p class="drop-text">How satisfied were you with the service you received?</p>
                     <label><input type="radio" class="input-radio" name="satisfaction-rating" value="excellent" checked>Excellent</label>
                     <label><input type="radio" class="input-radio" name="satisfaction-rating" value="good">Good</label>
                     <label><input type="radio" class="input-radio" name="satisfaction-rating" value="fair">Fair</label>
                     <label><input type="radio" class="input-radio" name="satisfaction-rating" value="poor">Poor</label>
                     <label><input type="radio" class="input-radio" name="satisfaction-rating" value="terrible">Terrible</label>
                 </div>
+                <br>
                 <!--checkbox-->
                 <div class="form-element">
-                    <p>What is the most important part of any restaurant experience?<span>(select your top three choices)</span></p>
+                    <p class="drop-text">What is the most important part of any restaurant experience?<span>(select your top three choices)</span></p>
                     <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="unique-experience">Unique Experience</label>
                     <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="price-to-quantity-ratio">Price-to-Quantity Ratio</label>
                     <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="food-quality">Food - Quality</label>
@@ -69,11 +78,13 @@
                     <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="friendly-service">Friendly Service</label>
                     <label><input type="checkbox" class="input-checkbox" name="restaurant-experience" value="restaurant-environment">Restaurant Environment</label>
                 </div>
+                <br>
                 <!--textarea-->
                 <div class="form-element">
-                    <p>Any additional comments or suggestions?</p>
+                    <p class="drop-text">Any additional comments or suggestions?</p>
                     <textarea id="textarea" name="additional-comments" placeholder="Enter comments here..."></textarea>
                 </div>
+                <br>
                 <!--submit-->
                 <div class="form-element">
                     <button type="submit" id="submit">Submit</button>
@@ -83,6 +94,13 @@
     </main>
 </body>
 <!--Free Code Camp Project Tester-->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    document.write(
+        '<script src="http://' +
+        (location.host || '${1:localhost}').split(':')[0] +
+        ':${2:35729}/livereload.js?snipver=1"></' +
+        'script>'
+    );
+</script>
 
 </html>
